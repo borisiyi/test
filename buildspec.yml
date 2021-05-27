@@ -18,10 +18,6 @@ phases:
     commands:
       - ls -al
 reports:
-  unit-tests:
-    files:
-      - '**/*'
-    base-directory: 'app/CodeBuild/unit_tests/output'
   tests-coverage:
     files:
       - '**/*'
