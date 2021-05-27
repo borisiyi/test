@@ -21,5 +21,4 @@ reports:
   tests-coverage:
     files:
       - '**/*'
-    base-directory: 'report/coverage'
-    file-format: 'COBERTURAXML'
+    base-directory: 'report'
