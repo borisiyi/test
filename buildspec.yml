@@ -1,0 +1,29 @@
+version: 0.2
+
+env:
+  FILE_FORMAT: ${FILEFORMAT}
+
+phases:
+  install:
+    runtime-versions:
+      docker: 18
+      python: 3.8
+    commands:
+      - ls -al
+  pre_build:
+    commands:
+      - echo Starting Docker daemon
+
+  build:
+    commands:
+      -ls -al
+reports:
+  unit-tests:
+    files:
+      - '**/*'
+    base-directory: 'app/CodeBuild/unit_tests/output'
+  tests-coverage:
+    files:
+      - '**/*'
+    base-directory: 'CodeBuild/unit_tests/coverage'
+    file-format: $FILE_FORMAT
