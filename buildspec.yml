@@ -22,4 +22,4 @@ reports:
     files:
       - '**/*'
     base-directory: 'report/'
-    file-format: ${FILEFORMAT}
+    file-format: COBERTURAXML
