@@ -16,7 +16,7 @@ phases:
 
   build:
     commands:
-      -ls -al
+      - ls -al
 reports:
   unit-tests:
     files:
