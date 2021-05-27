@@ -9,7 +9,7 @@ phases:
       docker: 18
       python: 3.8
     commands:
-      - ls -al
+      - env
   pre_build:
     commands:
       - echo Starting Docker daemon
