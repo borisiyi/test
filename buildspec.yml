@@ -25,5 +25,5 @@ reports:
   tests-coverage:
     files:
       - '**/*'
-    base-directory: 'CodeBuild/unit_tests/coverage'
+    base-directory: '/'
     file-format: $FILE_FORMAT
