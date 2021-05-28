@@ -18,6 +18,8 @@ phases:
     commands:
       - ls -al
 reports:
-  tests-coverage:
+  coverage-report:
+    files:
+      - '**/*'
     base-directory: 'report/coverage'
     file-format: COBERTURAXML
